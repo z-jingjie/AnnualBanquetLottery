@@ -1,0 +1,127 @@
+.goods-stock-manage,
+.goods-info-manage {
+  padding-bottom: 40px;
+
+  .goods-filter-panel {
+    background: #f6f6f6;
+  }
+
+  .goods-controll-panel {
+    right: 0;
+    bottom: 5px;
+  }
+
+  .goods-display-table {
+
+    .el-row {
+      border-bottom: 1px solid #dcdcdc;
+
+      &.goods-table-head {
+        border-width: 2px;
+      }
+    }
+
+    .goods-table-item.active {
+      background: #f1f1f1;
+    }
+
+    .el-col {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 40px;
+      padding: 5px 0;
+    }
+    
+    .table-head-txt{
+      color: #333;
+      font-weight: bold;
+    }
+
+    .table-item-txt {
+      width: 100%;
+      text-align: center;
+
+      &.goods-name {
+        width: 95%;
+        line-height: 18px;
+        text-align: left;
+        color: #999999;
+
+        &:not(.del) {
+          cursor: pointer;
+          color: #107bcb;
+        }
+      }
+    }
+
+    .goods-controll-btn {
+      color: #666666;
+      margin-right: 10px;
+
+      &:hover {
+        color: #107bcb;
+      }
+    }
+
+    .goods-pic {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 70px;
+      height: 82px;
+      overflow: hidden;
+    }
+
+  }
+
+  .goods-filter-panel {
+
+    .el-form-item {
+      margin-right: 7px;
+    }
+
+    .el-form-item__label {
+      background: #f6f6f6;
+      border: 1px solid #dcdfe6;
+      border-right: 0;
+      box-sizing: border-box;
+      text-align: center;
+      border-radius: 4px 0 0 4px;
+      padding: 0 10px;
+      vertical-align: bottom;
+    }
+
+    .el-input {
+      width: 140px;
+    }
+
+    .el-input__inner {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    .small-width {
+      .el-input {
+        width: 110px;
+      }
+    }
+  }
+
+  .bottom-controll-line {
+    display: flex;
+    align-items: center;
+
+    .controll-line {
+      flex: 1;
+    }
+
+    .multi-goods-btn {
+      font-size: 14px;
+
+      &:not(:last-of-type) {
+        margin-right: 8px;
+      }
+    }
+  }
+}
